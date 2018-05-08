@@ -1,5 +1,5 @@
 package com.drpicox.bowlingKata;
 
-public class Main {
+public class Game {
 
 }
