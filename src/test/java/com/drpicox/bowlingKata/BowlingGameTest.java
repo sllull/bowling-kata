@@ -14,13 +14,16 @@ public class BowlingGameTest extends TestCase {
         g = new Game();
     }
 
+    private void rollMany(int n, int pins) {
+        for (int i = 0; i < n; i++)
+            g.roll(pins);
+    }
+
     @Test
     public void testGutterGame() throws Exception {
         int n = 20;
         int pins = 0;
-        for (int i=0; i<n;i++) {
-            g.roll(pins);
-        }
+        rollMany(n,pins);
         assertEquals(0, g.score());
     }
 
