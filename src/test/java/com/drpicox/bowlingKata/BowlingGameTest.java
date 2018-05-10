@@ -27,9 +27,8 @@ public class BowlingGameTest extends TestCase {
 
     @Test
     public void testAllOnes() throws Exception{
-        for (int i =0; i<20 ; i++)
-            g.roll(1);
-        assertEquals(20,g.score());
+       rollMany(20,1);
+       assertEquals(20,g.score());
     }
 
 //    public void testOneSpare() throws Exception{
